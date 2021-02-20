@@ -10,17 +10,24 @@
 
     <title>Random City in PL picker</title>
   </head>
-  <body>
+  <body style="background-color: #fafbfc;">
 
     <div class="container-fluid">
       <div class="row align-items-center" style="height: 90vh;">
-        <div class="col-12" style="text-align: center;">
-          <h1>Pick random city in Poland:</h1>
-          <br>
-          <button type="button" class="btn btn-success" onclick="pick()"> Pick!</button>
-          <br>
-          <br>
-          <div id="city" class="alert alert-warning" style="width: 300px; margin: auto; cursor: pointer;" onclick="navigateToGoogleMaps()">...</div>
+        <div class="col-12 text-center">
+          <div class="card" style="max-width: 600px; margin: auto;">
+            <div class="card-body">
+              <h1>Pick random city in Poland:</h1>
+              <br>
+              <button type="button" class="btn btn-success" onclick="pick()"> Pick!</button>
+              <br>
+              <br>
+              <div id="city" class="alert alert-warning" style="max-width: 300px; margin: auto; cursor: pointer;" onclick="navigateToGoogleMaps()">...</div>
+              <div style="max-width: 300px; margin: auto; font-size: 9pt;">
+                <p class="fw-light" >You can click on the city name to navigate to the map</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
